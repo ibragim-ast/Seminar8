@@ -6,7 +6,7 @@ int[,] CreateMatrix(int row, int column, int min, int max)
     int[,] matrixArr = new int[row, column];
     for (int i = 0; i < matrixArr.GetLength(0); i++)
     {
-        for (int j = 0; j < matrixArr.GetLength(0); j++)
+        for (int j = 0; j < matrixArr.GetLength(1); j++)
         {
             matrixArr[i,j] = new Random().Next(min, max);
         }
@@ -34,11 +34,10 @@ void SwapRows(int[,] array)
         int temp = array[0,i];
         array[0,i] = array[rowCount -1, i];
         array[rowCount -1, i] = temp; 
-    
     }
 }
 
-int[,] matrixArr = CreateMatrix(4, 4, 0, 100);
+int[,] matrixArr = CreateMatrix(7, 8, 0, 100);
 PrintMatrix(matrixArr);
 System.Console.WriteLine();
 SwapRows(matrixArr);
