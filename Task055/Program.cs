@@ -25,11 +25,6 @@ void PrintMatrix(int[,] arr)
 
 int[,] ChangeRowColumn(int[,] array)
 {
-    // int newRow = array.GetLength(0);
-    // int newColumn = array.GetLength(1);
-    // if (newColumn != newRow)
-    // {System.Console.WriteLine("Некорректный размер матрицы");
-    // return;}
     int[,] newArray = new int[array.GetLength(1), array.GetLength(0)];
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -41,8 +36,7 @@ int[,] ChangeRowColumn(int[,] array)
     return newArray;
 }
 
-
-int[,] matrixArr = CreateMatrix(4, 5, 0, 100);
+int[,] matrixArr = CreateMatrix(3, 2, 0, 100);
 PrintMatrix(matrixArr);
 System.Console.WriteLine();
 matrixArr = ChangeRowColumn(matrixArr);
