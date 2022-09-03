@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ibragim.ast/Documents/Geek_Brains/Introduction to programming languages/Seminar/Seminar8/Task057.1/Task057.1.csproj",
+      "projectUniqueName": "/Users/ibragim.ast/Documents/Geek_Brains/Introduction to programming languages/Seminar/Seminar8/Task057/Task057.1.csproj",
       "projectName": "Task057.1",
-      "projectPath": "/Users/ibragim.ast/Documents/Geek_Brains/Introduction to programming languages/Seminar/Seminar8/Task057.1/Task057.1.csproj",
+      "projectPath": "/Users/ibragim.ast/Documents/Geek_Brains/Introduction to programming languages/Seminar/Seminar8/Task057/Task057.1.csproj",
       "packagesPath": "/Users/ibragim.ast/.nuget/packages/",
-      "outputPath": "/Users/ibragim.ast/Documents/Geek_Brains/Introduction to programming languages/Seminar/Seminar8/Task057.1/obj/",
+      "outputPath": "/Users/ibragim.ast/Documents/Geek_Brains/Introduction to programming languages/Seminar/Seminar8/Task057/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ibragim.ast/.nuget/NuGet/NuGet.Config"

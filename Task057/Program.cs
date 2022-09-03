@@ -34,6 +34,7 @@ int[] ConverterMatrixToArray(int[,] matrixArray)
 {
     int length = matrixArray.GetLength(0) * matrixArray.GetLength(1);
     int[] array = new int[length];
+    System.Console.WriteLine(length);
     int z = 0;
     for (int i = 0; i < matrixArray.GetLength(1); i++)
     {
@@ -41,34 +42,54 @@ int[] ConverterMatrixToArray(int[,] matrixArray)
         {
             array[z] = matrixArray[j, i];
             z++;
-        }  
+        }
     }
     return array;
 }
 
 //---Подсчет количества повторений чисел в массиве---///
-void FindCountNumber(int[] array)
+// void FindCountNumber(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         int count = 0;
+//         for (int j = 0; j < array.Length; j++)
+//         {
+//             if (array[i] == array[j])
+//                 count++;
+//         }
+//         if (i < 1)
+//         { System.Console.WriteLine($"Число {array[0]} встречается в массиве {count} раз"); }
+//         else if (i > 0 && array[i] != array[i + 1])
+//         { System.Console.WriteLine($"Число {array[i]} встречается в массиве {count} раз"); }
+//         else if (array[i] == array.Length)
+//         { System.Console.WriteLine($"Число {array[i]} встречается в массиве {count} раз"); }
+//     }
+// }
+
+void FindCountNumber(int[] array);
 {
-    int count = 0;
-    Array.Sort(array); //Сортировка массива
     for (int i = 0; i < array.Length; i++)
     {
-        count = 0;
+        int count = 0;
         for (int j = 0; j < array.Length; j++)
         {
             if (array[i] == array[j])
                 count++;
         }
         if (i < 1)
-        {System.Console.WriteLine($"Число {array[0]} встречается в массиве {count} раз");}
-        else if (i > 0 && array[i] != array[i -1])
-        {System.Console.WriteLine($"Число {array[i]} встречается в массиве {count} раз");}
-    }  
+        { System.Console.WriteLine($"Число {array[0]} встречается в массиве {count} раз"); }
+        else if (array[i] < array.Length -1 && i > 0 && array[i] != array[i + 1])
+        { System.Console.WriteLine($"Число {array[i]} встречается в массиве {count} раз"); }
+        else if (array[i] == array.Length)
+        { System.Console.WriteLine($"Число {array[i]} встречается в массиве {count} раз"); }
+    }
 }
 
-int[,] matrixArr = CreateMatrix(3, 10, 0, 10);
+int[,] matrixArr = CreateMatrix(3, 3, 0, 10);
 PrintMatrix(matrixArr);
 int[] array = ConverterMatrixToArray(matrixArr);
 FindCountNumber(array);
+
 
 
