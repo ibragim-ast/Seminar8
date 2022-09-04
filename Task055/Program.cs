@@ -36,7 +36,7 @@ int[,] ChangeRowColumn(int[,] array)
     return newArray;
 }
 
-int[,] matrixArr = CreateMatrix(3, 2, 0, 100);
+int[,] matrixArr = CreateMatrix(4, 2, 0, 100);
 PrintMatrix(matrixArr);
 System.Console.WriteLine();
 matrixArr = ChangeRowColumn(matrixArr);

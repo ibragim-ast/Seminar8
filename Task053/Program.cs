@@ -37,7 +37,7 @@ void SwapRows(int[,] array)
     }
 }
 
-int[,] matrixArr = CreateMatrix(7, 8, 0, 100);
+int[,] matrixArr = CreateMatrix(4, 4, 0, 10);
 PrintMatrix(matrixArr);
 System.Console.WriteLine();
 SwapRows(matrixArr);
